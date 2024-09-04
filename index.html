@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treine.me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="">
+    <header id="header">
+        <span class="logo">Treine.me</span>
+        <div>
+            <nav class="desktop-nav hidden">
+                <ul>
+                    <li><a class="actived" href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a class="member" href="./member.html">Área de membros</a></li>
+                </ul>
+            </nav>
+            <button id="sm" class="switch-mode"><i id="smi" class="ph ph-sun"></i></button>
+            <button id="menu" class="sandwich-menu"><i class="ph ph-list"></i></button>
+            <div id="modal" class="mobile-modal hidden">
+                <nav class="mobile-nav">
+                    <button id="exit" class="button-exit"><i class="ph ph-x"></i></button>
+                    <ul>
+                        <li><a class="actived" href="#home" onclick="fechar()">Home</a></li>
+                        <li><a href="#about" onclick="fechar()">Sobre</a></li>
+                        <li><a href="#plans" onclick="fechar()">Planos</a></li>
+                        <li><a href="#contact" onclick="fechar()">Contato</a></li>
+                        <li><a class="member" href="./member.html">Área de membros</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <img src="./src/assets/fitness-jump.svg" alt="mulher fazendo atividade física com corda, pesos e bola de gisnástica">
+                <div>
+                    <h2>Treinos <span>exclusivos</span><br> para você!</h2>
+                    <p>Nós criamos treinos <span>exclusivos e únicos para você.</span> Invista no seu corpo e <span>tenha muito mais performance</span> e qualidade de vida.</p>
+                    <a href="#plans">Saiba mais</a>
+                </div>
+        </section>
+        <section id="about">
+            <div class="title">
+                <h2>Triade Perfeita!</h2>
+                <p>Fazendo a assinatura de um de nossos planos você terá os três pilares para a performace máxima em seus treinos!</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="./src/assets/salada2.png" alt="pote com legumes, salada">
+                    <h3>Nutrição Balanceada</h3>
+                    <p>A chave para alcançar seus objetivos de fitness reside na nutrição adequada. No Treine.me, entendemos que o que você coloca em seu corpo tem um impacto direto em seus resultados.</p>
+                </div>
+                <div class="card">
+                    <img src="./src/assets/exercicio2.png" alt="halter de academia, peso de exercício físico">
+                    <h3>Treinamento Funcional</h3>
+                    <p>No Treine.me, não se trata apenas de levantar pesos; é sobre desenvolver uma base sólida de movimentos funcionais que melhorem sua qualidade de vida.</p>
+                </div>
+                <div class="card">
+                    <img src="./src/assets/cerebro2.png" alt="imagem do cérebro de lado">
+                    <h3>Mentalidade Fortalecida</h3>
+                    <p>Nosso programa de coaching mental oferece as ferramentas e técnicas necessárias para superar obstáculos, desenvolver resiliência e manter o foco em seus objetivos.</p>
+                </div>
+            </div>
+        </section>
+        <section id="plans">
+            <div>
+                <h2>Contrate-nos</h2>
+                <p>Para contemplar todos os nossos serviços e a experiência de ser um treiner.me, escolha uma dessas assinaturas.</p>
+            </div>
+            <div class="cards-plans">
+                <div class="card-plans">
+                    <h3>Básico</h3>
+                    <p>Para pessoas que não precisam de um acompanhamento constante durante um mês.</p>
+                    <p><span>R$ 25</span> /mês por usuário</p>
+                    <button>Assinar</button>
+                    <ul>
+                        <p>Recursos do plano:</p>
+                        <li>Acompanhamento nutricional</li>
+                        <li>Recomendação de dieta</li>
+                        <li>Acompanhamento de execícios</li>
+                        <li>Recomendação de exercícios</li>
+                    </ul>
+                </div>
+                <div class="card-plans">
+                    <h3>Especial</h3>
+                    <p>Para pessoas que querem atingir seu potêncial máximo.</p>
+                    <p><span>R$ 50</span> /mês por usuário</p>
+                    <button>Assinar</button>
+                    <ul>
+                        <p>Recursos do plano:</p>
+                        <li>Acompanhamento nutricional</li>
+                        <li>Recomendação de dieta</li>
+                        <li>Acompanhamento de execícios</li>
+                        <li>Recomendação de exercícios</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <form>
+                <fieldset>
+                    <legend>Vamos <span>treinar?</span></legend>
+                    <div class="input-total">
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" placeholder="Digite seu nome" class="input required" oninput="nameValidate()">
+                            <p class="p-required">Digite um nome válido</p>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="Digite seu e-mail" class="input required" oninput="emailValidate()">
+                            <p class="p-required">Digite um e-mail válido, exemplo: exemplo@contato.com</p>
+                        </div>
+                        <div class="input-textarea">
+                            <label for="textarea">Digite sua mensagem</label>
+                            <textarea oninput="textareaValidate()" id="textarea" placeholder="Digite seus objetivos, metas e disponibilidades." class="required"></textarea>
+                            <p class="p-required">Digite uma mensagem com mais descrição.</p>
+                        </div>
+                    <button>Enviar mensagem</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <div id="ao-topo">
+        <a href="#header"><i class="ph-fill ph-arrow-circle-up"></i></a>
+    </div>
+    <footer>
+        <div id="links">
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+        </div>
+        <p>Todos os direitos reservados. <br>Lucas Santos 2024</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
